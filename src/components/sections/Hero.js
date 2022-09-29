@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
 import ButtonGroup from '../elements/ButtonGroup';
-import Button from '../elements/Button';
 import Image from '../elements/Image';
 import Modal from '../elements/Modal';
 
@@ -64,17 +63,39 @@ const Hero = ({
               Landing template for <span className="text-color-primary">startups</span>
             </h1>
             <div className="container-xs">
-              <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
+              <p className="m-0 mb-32 reveal-from-bottom" style={{ fontWeight: "bold"}} data-reveal-delay="400">
                 Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.
                 </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
-                  <Button tag="a" color="primary" wideMobile href="https://cruip.com/">
-                    Get started
-                    </Button>
-                  <Button tag="a" color="dark" wideMobile href="https://github.com/cruip/open-react-template/">
+                <h1 className="m-0">
+                  <a href="https://twitter.com/EducaDAOBR" target="_blank" rel="noopener noreferrer">
+                    <Image
+                      src={require('./../../assets/images/twitter.svg')}
+                      alt="Open"
+                      width={40}
+                      height={40} />
+                  </a>
+                </h1>
+                  {/* <Button tag="a" color="primary" wideMobile href="https://cruip.com/">
+                  <Image
+                    src={require('./../../assets/images/twitter.svg')}
+                    alt="Open"
+                    width={138}
+                    height={138} />
+                  </Button> */}
+                  {/* <Button tag="a" color="dark" wideMobile href="https://github.com/cruip/open-react-template/">
                     View on Github
-                    </Button>
+                  </Button> */}
+                <h1 className="m-0 ml-32">
+                <a href="https://discord.gg/VFqEnrdvgB" target="_blank" rel="noopener noreferrer">
+                    <Image
+                      src={require('./../../assets/images/discord.svg')}
+                      alt="Open"
+                      width={40}
+                      height={40} />
+                  </a>
+                </h1>
                 </ButtonGroup>
               </div>
             </div>
