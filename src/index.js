@@ -11,8 +11,6 @@ import "./assets/scss/style.scss";
 
 const history = createBrowserHistory();
 
-console.log(process.env.PUBLIC_URL);
-
 ReactDOM.render(
   <BrowserRouter history={history} basename={process.env.PUBLIC_URL}>
     <App />
