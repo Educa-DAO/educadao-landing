@@ -26,7 +26,11 @@ export default function Home() {
           </div>
 
           <div className="flex gap-x-8">
-            <Link href="https://twitter.com/EducaDAOBR" target={'_blank'}>
+            <Link
+              href="https://twitter.com/EducaDAOBR"
+              target="_blank"
+              title="Ir para o Twitter"
+            >
               <Image
                 src="/images/social-media/twitter.svg"
                 alt="twitter logo"
@@ -36,7 +40,11 @@ export default function Home() {
               />
             </Link>
 
-            <Link href="https://discord.gg/PaB2qJ5a6j" target={'_blank'}>
+            <Link
+              href="https://discord.gg/PaB2qJ5a6j"
+              target="_blank"
+              title="Ir para o Discord"
+            >
               <Image
                 src="/images/social-media/discord.svg"
                 alt="discord logo"
