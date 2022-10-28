@@ -32,8 +32,12 @@ const Profile: React.FC<IProfile> = ({
           className="rounded-full object-cover w-[200px] h-[200px]"
         />
       </div>
-      <span className="mt-6 text-white font-bold text-lg">{name}</span>
-      <span className="text-sun font-semibold">{role}</span>
+      <span className="mt-6 text-white font-bold text-base sm:text-lg">
+        {name}
+      </span>
+      <span className="text-sun text-sm sm:text-base font-semibold">
+        {role}
+      </span>
       <div className="flex gap-x-5 mt-3">
         {socialNetworks.linkedin && (
           <Link href={socialNetworks.linkedin} target="_blank">
@@ -42,6 +46,7 @@ const Profile: React.FC<IProfile> = ({
               alt="linkedin logo"
               width={18}
               height={18}
+              className="w-4 h-4 sm:w-[18px] sm:h-[18px]"
             />
           </Link>
         )}
@@ -52,6 +57,7 @@ const Profile: React.FC<IProfile> = ({
               alt="instagram logo"
               width={18}
               height={18}
+              className="w-4 h-4 sm:w-[18px] sm:h-[18px]"
             />
           </Link>
         )}
@@ -67,6 +73,7 @@ const Profile: React.FC<IProfile> = ({
               alt="discord logo"
               width={18}
               height={18}
+              className="w-4 h-4 sm:w-[18px] sm:h-[18px]"
             />
           </Link>
         )}

@@ -6,7 +6,7 @@ export interface IHeader extends React.ComponentPropsWithoutRef<"header"> {}
 
 const Header: React.FC<IHeader> = ({ className, ...headerProps }) => {
   return (
-    <header {...headerProps} className="flex justify-center pt-3 pb-6 px-6">
+    <header {...headerProps} className="flex justify-center pt-4 pb-6 px-6">
       <div className="max-w-[1128px] w-full flex justify-between items-center">
         <Link href="/">
           <Image
