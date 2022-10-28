@@ -4,10 +4,7 @@ import Link from 'next/link';
 import { ProfileProps } from './Profile.types';
 
 export default function Profile({
-  name,
-  avatar,
-  role,
-  socialNetworks,
+  data: { name, avatar, role, socialNetworks },
 }: ProfileProps) {
   return (
     <div className="flex flex-col items-center">

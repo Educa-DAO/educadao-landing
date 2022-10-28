@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import type { NextPageWithLayout } from './_app';
 import Profile from '@components/profile/Profile';
+import { team } from '@_config/team';
 
-const Home: NextPageWithLayout = () => {
+export default function Home() {
   return (
     <>
       <section className="flex flex-col items-center pt-12 sm:pt-20">
@@ -106,96 +106,16 @@ const Home: NextPageWithLayout = () => {
       <section className="flex flex-col items-center mt-12 mb-16 sm:mb-20">
         <div className="flex flex-col flex-wrap items-center lg:w-[1024px] mx-2 sm:mx-0">
           <h2 className="text-2xl sm:text-4xl text-sun leading-10 tracking-normal font-semibold">
-            Fundadores
+            Equipe
           </h2>
 
           <div className="flex justify-center gap-x-8 lg:gap-x-10 xl:gap-x-16 gap-y-10 xl:gap-y-12 w-full flex-wrap mt-12 sm:mt-16">
-            <Profile
-              name="Paulo Salvatore"
-              avatar="/paulo.jpg"
-              role={'Head Educacional'}
-              socialNetworks={{
-                linkedin: 'https://www.linkedin.com/in/salvatorepaulo/',
-                github: 'https://github.com/paulosalvatore',
-              }}
-            />
-
-            <Profile
-              name="Kmilo Aparicio"
-              avatar="/kmilo.jpg"
-              role={'Estratégia e Negócios'}
-              socialNetworks={{
-                linkedin: 'https://www.linkedin.com/in/kmiloandres/',
-                discord: 'https://github.com/paulosalvatore',
-              }}
-            />
-
-            <Profile
-              name="Ailton Sávio"
-              avatar="/ailton.jpg"
-              role={'Head de Tecnologia'}
-              socialNetworks={{
-                linkedin:
-                  'https://www.linkedin.com/in/ailton-s%C3%A1vio-2b342715b/',
-                github: 'https://github.com/AiltonSavio',
-              }}
-            />
-
-            {/* <Profile
-              name="Bruno"
-              avatar="/avatar-placeholder.png"
-              role={"Qualidade"}
-              socialNetworks={{
-                linkedin: "https://www.linkedin.com/in/bbardella/",
-              }}
-            /> */}
-
-            <Profile
-              name="Vinícius Gonçalves"
-              avatar="/vinicius.png"
-              role={'Head de Produtos'}
-              socialNetworks={{
-                linkedin: 'https://www.linkedin.com/in/violigon/',
-                github: 'https://github.com/violigon',
-              }}
-            />
-
-            <Profile
-              name="Gabriel Gois"
-              avatar="/gabriel.jpeg"
-              role={'Gestor de Comunidade'}
-              socialNetworks={{
-                linkedin:
-                  'https://www.linkedin.com/in/gabriel-gois-barbeto-95524b23a/',
-              }}
-            />
-
-            {/* <Profile
-              name="Rivan Bello"
-              avatar="/avatar-placeholder.png"
-              role={""}
-              socialNetworks={{}}
-            /> */}
-
-            <Profile
-              name="Tainá Huertas"
-              avatar="/taina.jpeg"
-              role={'Head de Inovação'}
-              socialNetworks={{
-                github: 'https://github.com/taina-huertas',
-                linkedin:
-                  'https://www.linkedin.com/in/tain%C3%A1-salvatore-110573113/',
-              }}
-            />
+            {team.map((member) => (
+              <Profile data={member} key={member.name} />
+            ))}
           </div>
         </div>
       </section>
     </>
   );
-};
-
-// Home.getLayout = function getLayout(page: ReactElement) {
-//   return <Layout>{page}</Layout>;
-// };
-
-export default Home;
+}
