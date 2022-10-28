@@ -17,7 +17,7 @@ export default function Home() {
           />
 
           <div className="mb-6">
-            <p className="font-bold text-blackHaze text-center text-base sm:text-xl">
+            <p className="font-bold text-lightGray text-center text-base sm:text-xl">
               Impulsionadora de conteúdos educacionais, com acesso democrático e
               inclusivo para que estudantes se conectem a produtores de
               conteúdos, tanto consumindo os cursos, quanto sugerindo novos
@@ -66,7 +66,7 @@ export default function Home() {
             Ganhadores do Hackathon Ethereum SP 2022
           </h2>
         </div>
-        <div className="flex justify-center bg-blackHaze py-8 sm:py-12 px-10 lg:px-0">
+        <div className="flex justify-center bg-lightGray py-8 sm:py-12 px-10 lg:px-0">
           <div className="flex flex-col items-center lg:w-[896px] xl:w-[1024px]">
             <div className="flex flex-col lg:flex-row gap-y-8 sm:gap-y-14 justify-between items-center mb-10 sm:mb-16 w-full">
               <Image

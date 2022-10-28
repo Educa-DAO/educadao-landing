@@ -13,7 +13,7 @@ module.exports = {
       colors: {
         daisyBush: '#411998',
         sun: '#FCBD10',
-        blackHaze: '#ECEDED',
+        lightGray: '#ECEDED',
         gullGray: '#9CA9B3',
       },
     },
