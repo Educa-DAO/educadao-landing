@@ -8,7 +8,7 @@ export default function Header({ className, ...headerProps }: HeaderProps) {
   return (
     <header
       {...headerProps}
-      className="flex justify-center pt-4 pb-6 px-6 shadow-xl shadow-white/5"
+      className="flex justify-center pt-4 pb-6 px-6 shadow-xl shadow-white/5 sticky top-0 z-50 bg-daisyBush"
     >
       <div className="max-w-[1128px] w-full flex justify-between items-center">
         <Link href="/src/pages">
