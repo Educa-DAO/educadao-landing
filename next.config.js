@@ -2,6 +2,7 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    unoptimized: true
-  }
-}
+    unoptimized: true,
+  },
+  swcMinify: true,
+};

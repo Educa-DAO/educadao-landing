@@ -1,3 +1,3 @@
-import React from "react";
+import React from 'react';
 
-export type JoinButtonProps = React.ComponentPropsWithoutRef<"button">;
+export type JoinButtonProps = React.ComponentPropsWithoutRef<'button'>;

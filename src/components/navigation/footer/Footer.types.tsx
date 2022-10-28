@@ -1,3 +1,3 @@
-import React from "react";
+import React from 'react';
 
-export type FooterProps = React.ComponentPropsWithoutRef<"footer">;
+export type FooterProps = React.ComponentPropsWithoutRef<'footer'>;

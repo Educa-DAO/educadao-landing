@@ -1,11 +1,12 @@
-import Head from "next/head";
-import Header from "../navigation/header/Header";
-import React from "react";
-import { PrimaryLayoutProps } from "./Layout.types";
+import React from 'react';
+import Head from 'next/head';
+import { PrimaryLayoutProps } from './Layout.types';
+import Header from '@components/navigation/header/Header';
+import Footer from '@components/navigation/footer/Footer';
 
-function PrimaryLayout({
+export default function PrimaryLayout({
   children,
-  justify = "items-center",
+  justify = 'items-center',
   ...divProps
 }: PrimaryLayoutProps) {
   return (
@@ -21,11 +22,9 @@ function PrimaryLayout({
         <div className="w-full">
           <Header />
           <main>{children}</main>
-          {/* <Footer /> */}
+          <Footer />
         </div>
       </div>
     </>
   );
 }
-
-export default PrimaryLayout;

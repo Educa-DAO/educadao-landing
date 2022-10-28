@@ -1,14 +1,19 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { ProfileProps } from "./Profile.types";
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { ProfileProps } from './Profile.types';
 
-function Profile({ name, avatar, role, socialNetworks }: ProfileProps) {
+export default function Profile({
+  name,
+  avatar,
+  role,
+  socialNetworks,
+}: ProfileProps) {
   return (
     <div className="flex flex-col items-center">
       <div>
         <Image
-          src={avatar}
+          src={`/images/team/${avatar}`}
           alt={`${name} avatar`}
           width={200}
           height={200}
@@ -25,20 +30,24 @@ function Profile({ name, avatar, role, socialNetworks }: ProfileProps) {
       </span>
 
       <div className="flex gap-x-5 mt-3">
-        {Object.entries(socialNetworks).map(([key, value]) => (
-          <Link href={value} key={key} target="_blank">
-            <Image
-              src={`/social-media/${key}.svg`}
-              alt={`${key} logo`}
-              width={18}
-              height={18}
-              className="w-4 h-4 sm:w-[18px] sm:h-[18px]"
-            />
-          </Link>
-        ))}
+        {Object.entries(socialNetworks).map(
+          ([socialNetworkName, socialNetworkUrl]) => (
+            <Link
+              href={socialNetworkUrl}
+              key={socialNetworkName}
+              target="_blank"
+            >
+              <Image
+                src={`/images/social-media/${socialNetworkName}.svg`}
+                alt={`${socialNetworkName} logo`}
+                width={18}
+                height={18}
+                className="w-4 h-4 sm:w-[18px] sm:h-[18px]"
+              />
+            </Link>
+          )
+        )}
       </div>
     </div>
   );
 }
-
-export default Profile;
