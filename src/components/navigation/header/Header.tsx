@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import JoinButton from '@components/buttons/JoinButton';
+import Button from '@components/button/Button';
 import { HeaderProps } from './Header.types';
 
 export default function Header({ className, ...headerProps }: HeaderProps) {
@@ -19,7 +19,10 @@ export default function Header({ className, ...headerProps }: HeaderProps) {
             height={44}
           />
         </Link>
-        <JoinButton />
+
+        <Button link="https://discord.gg/VFqEnrdvgB">
+          Entre na comunidade
+        </Button>
       </div>
     </header>
   );
