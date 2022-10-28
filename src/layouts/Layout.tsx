@@ -13,7 +13,9 @@ export default function PrimaryLayout({
     <>
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" />
-        <title>Educa.DAO</title>
+        <title>
+          EducaDAO: O projeto que quer transformar a educação gratuita
+        </title>
 
         <meta
           name="description"
@@ -39,6 +41,8 @@ export default function PrimaryLayout({
           property="og:image"
           content="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FcKCM247FiUYX6K0eHvGy%2Fuploads%2Ff6TXInQHWEvrlSae8gCD%2Flogo_ganhadores.png?alt=media&token=4b6eb86a-7a9b-44d1-8bdb-e4c4511599f2"
         />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="educa-dao.com" />
       </Head>
 
       <div
