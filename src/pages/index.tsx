@@ -27,6 +27,20 @@ export default function Home() {
 
           <div className="flex gap-x-8">
             <Link
+              href="https://github.com/Educa-DAO"
+              target="_blank"
+              title="Ir para o GitHub"
+            >
+              <Image
+                src="/images/social-media/github.svg"
+                alt="github logo"
+                width={40}
+                height={40}
+                className="w-8 h-8 sm:w-10 sm:h-10"
+              />
+            </Link>
+
+            <Link
               href="https://twitter.com/EducaDAOBR"
               target="_blank"
               title="Ir para o Twitter"
