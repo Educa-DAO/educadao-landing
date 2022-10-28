@@ -1,3 +1,3 @@
 import React from 'react';
 
-export interface HeaderProps extends React.ComponentPropsWithoutRef<'header'> {}
+export type HeaderProps = React.ComponentPropsWithoutRef<'header'>;
