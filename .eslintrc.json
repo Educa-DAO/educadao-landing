@@ -1,0 +1,73 @@
+{
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "react",
+    "react-hooks",
+    "@typescript-eslint"
+  ],
+  "ignorePatterns": [
+    "!**/*"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.js",
+        "*.jsx",
+        "*.ts",
+        "*.tsx"
+      ],
+      "rules": {
+        "@typescript-eslint/interface-name-prefix": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-extra-parens": "off",
+        "@typescript-eslint/ban-types": "off",
+        "@typescript-eslint/no-shadow": "off",
+        "no-extra-parens": "off",
+        "@typescript-eslint/no-unused-vars": [
+          "warn",
+          {
+            "argsIgnorePattern": "^_",
+            "ignoreRestSiblings": true
+          }
+        ],
+        "arrow-parens": "off",
+        "curly": "warn",
+        "eqeqeq": "error",
+        "function-paren-newline": "off",
+        "linebreak-style": [
+          2,
+          "unix"
+        ],
+        "no-console": [
+          "error",
+          {
+            "allow": [
+              "warn",
+              "error",
+              "time",
+              "timeEnd"
+            ]
+          }
+        ],
+        "eol-last": "error",
+        "no-duplicate-imports": "off",
+        "no-return-await": "error",
+        "no-shadow": "off",
+        "no-unused-vars": "off",
+        "import/prefer-default-export": "off",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "react/prop-types": "off",
+        "react/react-in-jsx-scope": "off"
+      }
+    }
+  ]
+}
