@@ -20,9 +20,19 @@ export default function Header({ className, ...headerProps }: HeaderProps) {
           />
         </Link>
 
-        <Button link="https://discord.gg/VFqEnrdvgB">
-          Entre na comunidade
-        </Button>
+        <div className="flex flex-row">
+          <Button
+            link="https://educadao.gitbook.io/educa-dao/"
+            theme="tertiary"
+            className="mr-4 hidden md:block"
+          >
+            Documentação
+          </Button>
+
+          <Button link="https://discord.gg/VFqEnrdvgB">
+            Entre na comunidade
+          </Button>
+        </div>
       </div>
     </header>
   );
