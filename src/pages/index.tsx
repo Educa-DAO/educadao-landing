@@ -8,9 +8,13 @@ export default function Home() {
     <>
       <section className="flex flex-col items-center pt-12 sm:pt-20">
         <div className="flex flex-col items-center max-w-5xl mb-16 mx-10 xl:mx-0">
-          <h1 className="mb-5 sm:mb-8 text-4xl sm:text-6xl leading-10 tracking-normal font-semibold text-sun">
-            EducaDAO
-          </h1>
+          <Image
+            className="mb-5 sm:mb-8"
+            src="/images/logo-large-yellow-text.svg"
+            alt="EducaDAO Logo"
+            width={400}
+            height={126}
+          />
 
           <div className="mb-6">
             <p className="font-bold text-blackHaze text-center text-base sm:text-xl">

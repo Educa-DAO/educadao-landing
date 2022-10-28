@@ -13,10 +13,10 @@ export default function Header({ className, ...headerProps }: HeaderProps) {
       <div className="max-w-[1128px] w-full flex justify-between items-center">
         <Link href="/src/pages">
           <Image
-            src="/images/logo.svg"
-            alt="Educa.DAO logo"
+            src="/images/logo-small-white-text.svg"
+            alt="EducaDAO logo"
             width={138}
-            height={138}
+            height={44}
           />
         </Link>
         <JoinButton />
