@@ -12,7 +12,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export -o build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
@@ -21,6 +22,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@next/eslint-plugin-next": "^13.0.0",
     "@types/node": "18.11.3",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
