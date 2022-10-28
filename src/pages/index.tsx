@@ -36,7 +36,7 @@ export default function Home() {
               />
             </Link>
 
-            <Link href="https://discord.gg/VFqEnrdvgB" target={'_blank'}>
+            <Link href="https://discord.gg/PaB2qJ5a6j" target={'_blank'}>
               <Image
                 src="/images/social-media/discord.svg"
                 alt="discord logo"

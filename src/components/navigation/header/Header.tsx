@@ -29,7 +29,7 @@ export default function Header({ className, ...headerProps }: HeaderProps) {
             Documentação
           </Button>
 
-          <Button link="https://discord.gg/VFqEnrdvgB">
+          <Button link="https://discord.gg/PaB2qJ5a6j">
             Entre na comunidade
           </Button>
         </div>

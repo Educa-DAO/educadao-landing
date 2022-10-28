@@ -18,5 +18,5 @@ yarn dev
 
 ## Participe da nossa comunidade
 
-- [Discord](https://discord.gg/VFqEnrdvgB)
+- [Discord](https://discord.gg/PaB2qJ5a6j)
 - [Twitter](https://twitter.com/EducaDAOBR)
