@@ -1,4 +1,13 @@
 {
+  "name": "educadao-landing",
+  "version": "1.0.0",
+  "author": "EducaDAO",
+  "description": "Landing page for EducaDAO",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Educa-DAO/educadao-landing.git"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
