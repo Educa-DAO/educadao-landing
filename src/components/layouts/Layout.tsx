@@ -1,21 +1,19 @@
 import Head from "next/head";
-import Footer from "../navigation/footer/Footer";
 import Header from "../navigation/header/Header";
+import React from "react";
+import { PrimaryLayoutProps } from "./Layout.types";
 
-export interface IPrimaryLayout extends React.ComponentPropsWithoutRef<"div"> {
-  justify?: "items-center" | "items-start";
-}
-
-const PrimaryLayout: React.FC<IPrimaryLayout> = ({
+function PrimaryLayout({
   children,
   justify = "items-center",
   ...divProps
-}) => {
+}: PrimaryLayoutProps) {
   return (
     <>
       <Head>
         <title>Educa.DAO</title>
       </Head>
+
       <div
         {...divProps}
         className={`min-h-screen flex flex-col bg-daisyBush ${justify}`}
@@ -28,6 +26,6 @@ const PrimaryLayout: React.FC<IPrimaryLayout> = ({
       </div>
     </>
   );
-};
+}
 
 export default PrimaryLayout;

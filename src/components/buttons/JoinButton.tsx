@@ -1,8 +1,8 @@
 import Link from "next/link";
+import React from "react";
+import { JoinButtonProps } from "./JoinButton.types";
 
-export interface IJoinButton extends React.ComponentPropsWithoutRef<"button"> {}
-
-const JoinButton: React.FC<IJoinButton> = ({ className, ...buttonProps }) => {
+function JoinButton({ className, ...buttonProps }: JoinButtonProps) {
   return (
     <Link href="https://discord.gg/VFqEnrdvgB" target={"_blank"}>
       <button
@@ -13,6 +13,6 @@ const JoinButton: React.FC<IJoinButton> = ({ className, ...buttonProps }) => {
       </button>
     </Link>
   );
-};
+}
 
 export default JoinButton;

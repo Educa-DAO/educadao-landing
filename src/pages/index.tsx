@@ -13,6 +13,7 @@ const Home: NextPageWithLayout = () => {
           <h1 className="mb-5 sm:mb-8 text-4xl sm:text-6xl leading-10 tracking-normal font-semibold text-sun">
             EducaDAO
           </h1>
+
           <div className="mb-6">
             <p className="font-bold text-blackHaze text-center text-base sm:text-xl">
               Impulsionadora de conteúdos educacionais, com acesso democrático e
@@ -21,6 +22,7 @@ const Home: NextPageWithLayout = () => {
               temas.
             </p>
           </div>
+
           <div className="flex gap-x-8">
             <Link href="https://twitter.com/EducaDAOBR" target={"_blank"}>
               <Image
@@ -31,6 +33,7 @@ const Home: NextPageWithLayout = () => {
                 className="w-8 h-8 sm:w-10 sm:h-10"
               />
             </Link>
+
             <Link href="https://discord.gg/VFqEnrdvgB" target={"_blank"}>
               <Image
                 src="/discord.svg"
@@ -41,6 +44,7 @@ const Home: NextPageWithLayout = () => {
               />
             </Link>
           </div>
+
           <div className="relative w-full h-0 pb-[56.25%] mt-8 sm:mt-12">
             <iframe
               className="absolute top-0 left-0 w-full h-full md:min-h-[400px] overflow-hidden"
@@ -52,6 +56,8 @@ const Home: NextPageWithLayout = () => {
           </div>
         </div>
       </section>
+
+      {/* Hackathon Winner */}
       <section>
         <div className="flex justify-center items-center bg-sun h-32 sm:h-36 px-10 lg:px-0">
           <h2 className="text-2xl sm:text-4xl text-center leading-10 tracking-normal font-semibold text-daisyBush">
@@ -130,7 +136,7 @@ const Home: NextPageWithLayout = () => {
             />
             {/* <Profile
               name="Bruno"
-              avatar="/avatar.png"
+              avatar="/avatar-placeholder.png"
               role={"Qualidade"}
               socialNetworks={{
                 linkedin: "https://www.linkedin.com/in/bbardella/",
@@ -156,7 +162,7 @@ const Home: NextPageWithLayout = () => {
             />
             {/* <Profile
               name="Rivan Bello"
-              avatar="/avatar.png"
+              avatar="/avatar-placeholder.png"
               role={""}
               socialNetworks={{}}
             /> */}

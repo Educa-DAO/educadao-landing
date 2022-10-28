@@ -1,14 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import JoinButton from "../../buttons/JoinButton";
+import { HeaderProps } from "./Header.types";
 
-export interface IHeader extends React.ComponentPropsWithoutRef<"header"> {}
-
-const Header: React.FC<IHeader> = ({ className, ...headerProps }) => {
+function Header({ className, ...headerProps }: HeaderProps) {
   return (
     <header {...headerProps} className="flex justify-center pt-4 pb-6 px-6">
       <div className="max-w-[1128px] w-full flex justify-between items-center">
-        <Link href="/">
+        <Link href="/src/pages">
           <Image
             src="/logo.svg"
             alt="Educa.DAO logo"
@@ -20,6 +19,6 @@ const Header: React.FC<IHeader> = ({ className, ...headerProps }) => {
       </div>
     </header>
   );
-};
+}
 
 export default Header;
