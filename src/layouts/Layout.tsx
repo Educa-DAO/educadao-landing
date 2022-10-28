@@ -12,6 +12,7 @@ export default function PrimaryLayout({
   return (
     <>
       <Head>
+        <link rel="shortcut icon" href="/favicon.ico" />
         <title>Educa.DAO</title>
       </Head>
 
