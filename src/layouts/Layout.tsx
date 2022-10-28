@@ -27,7 +27,7 @@ export default function PrimaryLayout({
         <meta property="og:locale" content="pt_BR" />
         <meta
           property="og:title"
-          content="EducaDAO: O projeto que quer transformar a educação gratuita."
+          content="EducaDAO: O projeto que quer transformar a educação gratuita"
         />
         <meta
           property="og:description"
