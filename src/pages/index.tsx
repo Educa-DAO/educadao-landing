@@ -93,7 +93,7 @@ export default function Home() {
             </div>
 
             <h3 className="text-2xl text-center leading-10 tracking-normal font-semibold">
-              Ganhadores do desafio utilizando as tecnologias
+              Premiações extras
             </h3>
 
             <div className="flex flex-col lg:flex-row gap-y-8 sm:gap-y-14 justify-between items-center w-full mt-8 sm:mt-12">
