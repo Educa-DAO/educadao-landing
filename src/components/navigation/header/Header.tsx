@@ -6,7 +6,10 @@ import { HeaderProps } from './Header.types';
 
 export default function Header({ className, ...headerProps }: HeaderProps) {
   return (
-    <header {...headerProps} className="flex justify-center pt-4 pb-6 px-6">
+    <header
+      {...headerProps}
+      className="flex justify-center pt-4 pb-6 px-6 shadow-xl shadow-white/5"
+    >
       <div className="max-w-[1128px] w-full flex justify-between items-center">
         <Link href="/src/pages">
           <Image
