@@ -18,7 +18,7 @@ export default function Home() {
 
           <div className="mb-6">
             <p className="font-bold text-lightGray text-center text-base sm:text-xl">
-              Impulsionadora de conteúdos educacionais, com acesso democrático e
+              Impulsionadora de conteúdos educacionais, com acesso gratuito e
               inclusivo para que estudantes se conectem a produtores de
               conteúdos, tanto consumindo os cursos, quanto sugerindo novos
               temas.
