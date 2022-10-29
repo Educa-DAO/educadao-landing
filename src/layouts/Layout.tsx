@@ -39,7 +39,7 @@ export default function PrimaryLayout({
         <meta property="og:site_name" content="EducaDAO" />
         <meta
           property="og:image"
-          content="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FcKCM247FiUYX6K0eHvGy%2Fuploads%2Ff6TXInQHWEvrlSae8gCD%2Flogo_ganhadores.png?alt=media&token=4b6eb86a-7a9b-44d1-8bdb-e4c4511599f2"
+          content="https://educa-dao.com/images/meta/og-image-1.png"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="educa-dao.com" />
