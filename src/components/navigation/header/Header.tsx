@@ -44,7 +44,7 @@ export default function Header({ className, ...headerProps }: HeaderProps) {
               alt="discord logo"
               width={24}
               height={24}
-              className="mr-2"
+              className="mr-2 hidden md:block"
             />
 
             <div>Entre na comunidade</div>
