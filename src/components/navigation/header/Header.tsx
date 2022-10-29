@@ -22,6 +22,7 @@ export default function Header({ className, ...headerProps }: HeaderProps) {
             link="https://educadao.gitbook.io/educa-dao/"
             theme="tertiary"
             className="mr-4 hidden md:flex"
+            title="Ir para a documentação"
           >
             <GitBook
               color="daisyBush"
@@ -40,6 +41,7 @@ export default function Header({ className, ...headerProps }: HeaderProps) {
               width={24}
               height={24}
               className="mr-2 hidden md:block"
+              title="Ir para o Discord"
             />
 
             <div>Entre na comunidade</div>
