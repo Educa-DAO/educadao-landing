@@ -7,12 +7,13 @@ import Discord from '/public/images/social-media/discord.svg';
 import GitHub from '/public/images/social-media/github.svg';
 import Twitter from '/public/images/social-media/twitter.svg';
 import Logo from '@components/logo/Logo';
+import SocialMediaLinks from '@components/social-media-links/SocialMediaLinks';
 
 export default function Home() {
   return (
     <>
       <section className="flex flex-col items-center m-6">
-        <div className="flex flex-col items-center w-full max-w-5xl mb-16 mx-10 xl:mx-0">
+        <div className="flex flex-col items-center w-full mx-10 xl:mx-0">
           {/* Home Big Logo */}
           <Logo
             theme="wide-for-purple-bg-yellow-text"
@@ -39,46 +40,10 @@ export default function Home() {
           </div>
 
           {/* Social Media Links */}
-          <div className="flex gap-x-8 m-12">
-            <Link
-              href="https://github.com/Educa-DAO"
-              target="_blank"
-              title="Ir para o GitHub"
-            >
-              <GitHub
-                color="#FCBD10"
-                alt="github logo"
-                className="w-8 h-8 sm:w-10 sm:h-10"
-              />
-            </Link>
-
-            <Link
-              href="https://twitter.com/EducaDAOBR"
-              target="_blank"
-              title="Ir para o Twitter"
-            >
-              <Twitter
-                color="#FCBD10"
-                alt="twitter logo"
-                className="w-8 h-8 sm:w-10 sm:h-10"
-              />
-            </Link>
-
-            <Link
-              href="https://discord.gg/PaB2qJ5a6j"
-              target="_blank"
-              title="Ir para o Discord"
-            >
-              <Discord
-                color="#FCBD10"
-                alt="discord logo"
-                className="w-8 h-8 sm:w-10 sm:h-10"
-              />
-            </Link>
-          </div>
+          <SocialMediaLinks className="text-sun m-12" />
 
           {/* Description */}
-          <div className="m-4">
+          <div className="mb-6">
             <p className="font-bold text-lightGray text-center text-base sm:text-xl">
               Impulsionadora de conteúdos educacionais, com acesso gratuito e
               inclusivo para que estudantes se conectem a produtores de
