@@ -8,7 +8,7 @@ export default function Button({
   theme = 'primary',
   target = '_blank',
   children,
-  ...buttonProps
+  ...props
 }: ButtonProps) {
   const classNameForThemes: Record<
     NonNullable<ButtonProps['theme']>,
@@ -23,7 +23,7 @@ export default function Button({
     <Link href={link} target={target}>
       <button
         className={`px-4 sm:px-6 py-2 font-semibold rounded-sm text-sm sm:text-base ${classNameForThemes[theme]} ${className}`}
-        {...buttonProps}
+        {...props}
       >
         {children}
       </button>
