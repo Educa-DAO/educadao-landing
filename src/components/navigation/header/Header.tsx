@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Button from '@components/button/Button';
 import { HeaderProps } from './Header.types';
+import GitBook from '/public/images/social-media/gitbook.svg';
 import Discord from '/public/images/social-media/discord.svg';
 
 export default function Header({ className, ...headerProps }: HeaderProps) {
@@ -25,8 +26,15 @@ export default function Header({ className, ...headerProps }: HeaderProps) {
           <Button
             link="https://educadao.gitbook.io/educa-dao/"
             theme="tertiary"
-            className="mr-4 hidden md:block"
+            className="mr-4 hidden md:flex"
           >
+            <GitBook
+              color="daisyBush"
+              alt="discord logo"
+              width={24}
+              height={24}
+              className="mr-2"
+            />
             Documentação
           </Button>
 
