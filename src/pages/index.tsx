@@ -22,7 +22,7 @@ export default function Home() {
           />
 
           {/* Description */}
-          <div className="m-4">
+          <div className="m-6">
             <p className="font-bold text-lightGray text-center text-base sm:text-xl">
               Conheça o projeto que vai transformar a educação GRATUITA.
             </p>
