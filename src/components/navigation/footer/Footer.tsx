@@ -6,23 +6,16 @@ import { FooterProps } from './Footer.types';
 import Discord from '/public/images/social-media/discord.svg';
 import GitHub from '/public/images/social-media/github.svg';
 import Twitter from '/public/images/social-media/twitter.svg';
+import Logo from '@components/logo/Logo';
 
 export default function Footer({ className, ...footerProps }: FooterProps) {
   return (
     <footer
-      className="flex flex-row justify-evenly align-center p-10 bg-sun text-daisyBush shadow-t-md shadow-white/30"
+      className="flex flex-col md:flex-row justify-evenly items-center gap-y-4 p-10 bg-sun text-daisyBush shadow-t-md shadow-white/30"
       {...footerProps}
     >
       <div>
-        <Link href="/">
-          <Image
-            className="invert"
-            src="/images/logos/logo-alt-wide-for-black-bg.png"
-            alt="EducaDAO logo"
-            width={138}
-            height={44}
-          />
-        </Link>
+        <Logo theme="alt-wide-for-black-bg" className="invert" />
       </div>
 
       <div>

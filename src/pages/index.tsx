@@ -6,6 +6,7 @@ import { team } from '@_config/team';
 import Discord from '/public/images/social-media/discord.svg';
 import GitHub from '/public/images/social-media/github.svg';
 import Twitter from '/public/images/social-media/twitter.svg';
+import Logo from '@components/logo/Logo';
 
 export default function Home() {
   return (
@@ -13,10 +14,8 @@ export default function Home() {
       <section className="flex flex-col items-center m-6">
         <div className="flex flex-col items-center w-full max-w-5xl mb-16 mx-10 xl:mx-0">
           {/* Home Big Logo */}
-          <Image
-            className="m-4"
-            src="/images/logos/logo-wide-for-purple-bg.svg"
-            alt="EducaDAO Logo"
+          <Logo
+            theme="wide-for-purple-bg-yellow-text"
             width={300}
             height={94}
           />

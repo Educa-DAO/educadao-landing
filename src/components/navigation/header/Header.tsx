@@ -1,10 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Button from '@components/button/Button';
 import { HeaderProps } from './Header.types';
+import Button from '@components/button/Button';
+
 import GitBook from '/public/images/social-media/gitbook.svg';
 import Discord from '/public/images/social-media/discord.svg';
+import Logo from '@components/logo/Logo';
 
 export default function Header({ className, ...headerProps }: HeaderProps) {
   return (
@@ -13,14 +15,7 @@ export default function Header({ className, ...headerProps }: HeaderProps) {
       className="flex justify-center pt-4 pb-6 px-6 shadow-xl shadow-white/5 sticky top-0 z-50 bg-daisyBush"
     >
       <div className="max-w-[1128px] w-full flex justify-between items-center">
-        <Link href="/">
-          <Image
-            src="/images/logos/logo-wide-for-purple-bg-white-text.svg"
-            alt="EducaDAO logo"
-            width={138}
-            height={44}
-          />
-        </Link>
+        <Logo theme="wide-for-purple-bg-white-text" />
 
         <div className="flex flex-row">
           <Button
