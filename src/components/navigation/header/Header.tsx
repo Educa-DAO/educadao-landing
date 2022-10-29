@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Button from '@components/button/Button';
 import { HeaderProps } from './Header.types';
+import Discord from '/public/images/social-media/discord.svg';
 
 export default function Header({ className, ...headerProps }: HeaderProps) {
   return (
@@ -29,8 +30,16 @@ export default function Header({ className, ...headerProps }: HeaderProps) {
             Documentação
           </Button>
 
-          <Button link="https://discord.gg/PaB2qJ5a6j">
-            Entre na comunidade
+          <Button link="https://discord.gg/PaB2qJ5a6j" className="flex">
+            <Discord
+              color="#FFFFFF"
+              alt="discord logo"
+              width={24}
+              height={24}
+              className="mr-2"
+            />
+
+            <div>Entre na comunidade</div>
           </Button>
         </div>
       </div>
