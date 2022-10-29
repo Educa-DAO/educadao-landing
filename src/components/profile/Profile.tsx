@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ProfileProps } from './Profile.types';
+import { SocialNetworkIcon } from '@components/social-network-icon';
 
 export default function Profile({
   data: { name, avatar, role, socialNetworks },
@@ -34,11 +35,9 @@ export default function Profile({
               key={socialNetworkName}
               target="_blank"
             >
-              <Image
-                src={`/images/social-media/${socialNetworkName}.svg`}
-                alt={`${socialNetworkName} logo`}
-                width={18}
-                height={18}
+              <SocialNetworkIcon
+                socialNetwork={socialNetworkName}
+                color="#FCBD10"
                 className="w-4 h-4 sm:w-[18px] sm:h-[18px]"
               />
             </Link>
