@@ -3,5 +3,6 @@ export type SocialNetworksDomain = {
   linkedin?: string;
   instagram?: string;
   github?: string;
+  twitter?: string;
   youtube?: string;
 };
