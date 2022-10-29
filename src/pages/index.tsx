@@ -1,11 +1,6 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import Profile from '@components/profile/Profile';
 import { team } from '@_config/team';
-
-import Discord from '/public/images/social-media/discord.svg';
-import GitHub from '/public/images/social-media/github.svg';
-import Twitter from '/public/images/social-media/twitter.svg';
 import Logo from '@components/logo/Logo';
 import SocialMediaLinks from '@components/social-media-links/SocialMediaLinks';
 
@@ -43,7 +38,7 @@ export default function Home() {
           <SocialMediaLinks className="text-sun m-12" />
 
           {/* Description */}
-          <div className="mb-6">
+          <div className="mb-6 max-w-4xl">
             <p className="font-bold text-lightGray text-center text-base sm:text-xl">
               Impulsionadora de conteúdos educacionais, com acesso gratuito e
               inclusivo para que estudantes se conectem a produtores de
