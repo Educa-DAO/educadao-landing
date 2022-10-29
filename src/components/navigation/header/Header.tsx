@@ -19,7 +19,7 @@ export default function Header({ className, ...headerProps }: HeaderProps) {
 
         <div className="flex flex-row">
           <Button
-            link="https://educadao.gitbook.io/educa-dao/"
+            link="https://docs.educa-dao.com/"
             theme="tertiary"
             className="flex mr-4"
             title="Ir para a documentação"
