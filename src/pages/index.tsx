@@ -3,39 +3,52 @@ import Link from 'next/link';
 import Profile from '@components/profile/Profile';
 import { team } from '@_config/team';
 
+import Discord from '/public/images/social-media/discord.svg';
+import GitHub from '/public/images/social-media/github.svg';
+import Twitter from '/public/images/social-media/twitter.svg';
+
 export default function Home() {
   return (
     <>
-      <section className="flex flex-col items-center pt-12 sm:pt-20">
-        <div className="flex flex-col items-center max-w-5xl mb-16 mx-10 xl:mx-0">
+      <section className="flex flex-col items-center m-6">
+        <div className="flex flex-col items-center w-full max-w-5xl mb-16 mx-10 xl:mx-0">
+          {/* Home Big Logo */}
           <Image
-            className="mb-5 sm:mb-8"
+            className="m-4"
             src="/images/logo-large-yellow-text.svg"
             alt="EducaDAO Logo"
-            width={400}
-            height={126}
+            width={300}
+            height={94}
           />
 
-          <div className="mb-6">
+          {/* Description */}
+          <div className="m-4">
             <p className="font-bold text-lightGray text-center text-base sm:text-xl">
-              Impulsionadora de conteúdos educacionais, com acesso gratuito e
-              inclusivo para que estudantes se conectem a produtores de
-              conteúdos, tanto consumindo os cursos, quanto sugerindo novos
-              temas.
+              Conheça o projeto que vai transformar a educação GRATUITA.
             </p>
           </div>
 
-          <div className="flex gap-x-8">
+          {/* Video Iframe */}
+          <div className="relative w-[106.75vh] max-w-[95vw] min-h-[53.5vw] md:min-h-[60vh] sm:max-h-[20vw]">
+            <iframe
+              className="absolute top-0 left-0 w-full h-full overflow-hidden"
+              src="https://www.youtube.com/embed/Hn6-JoCGZRc?autoplay=1&mute=1"
+              frameBorder="0"
+              allowFullScreen={true}
+              allow="autoplay"
+            />
+          </div>
+
+          {/* Social Media Links */}
+          <div className="flex gap-x-8 m-12">
             <Link
               href="https://github.com/Educa-DAO"
               target="_blank"
               title="Ir para o GitHub"
             >
-              <Image
-                src="/images/social-media/github.svg"
+              <GitHub
+                color="#FCBD10"
                 alt="github logo"
-                width={40}
-                height={40}
                 className="w-8 h-8 sm:w-10 sm:h-10"
               />
             </Link>
@@ -45,11 +58,9 @@ export default function Home() {
               target="_blank"
               title="Ir para o Twitter"
             >
-              <Image
-                src="/images/social-media/twitter.svg"
+              <Twitter
+                color="#FCBD10"
                 alt="twitter logo"
-                width={40}
-                height={40}
                 className="w-8 h-8 sm:w-10 sm:h-10"
               />
             </Link>
@@ -59,24 +70,22 @@ export default function Home() {
               target="_blank"
               title="Ir para o Discord"
             >
-              <Image
-                src="/images/social-media/discord.svg"
+              <Discord
+                color="#FCBD10"
                 alt="discord logo"
-                width={40}
-                height={40}
                 className="w-8 h-8 sm:w-10 sm:h-10"
               />
             </Link>
           </div>
 
-          <div className="relative w-full h-0 pb-[56.25%] mt-8 sm:mt-12">
-            <iframe
-              className="absolute top-0 left-0 w-full h-full md:min-h-[400px] overflow-hidden"
-              src="https://www.youtube.com/embed/Yfag6BvTjEg?autoplay=1&mute=1&cc_load_policy=1&cc_lang_pref=pt-BR"
-              frameBorder="0"
-              allowFullScreen={true}
-              allow="autoplay"
-            />
+          {/* Description */}
+          <div className="m-4">
+            <p className="font-bold text-lightGray text-center text-base sm:text-xl">
+              Impulsionadora de conteúdos educacionais, com acesso gratuito e
+              inclusivo para que estudantes se conectem a produtores de
+              conteúdos, tanto consumindo os cursos, quanto sugerindo novos
+              temas.
+            </p>
           </div>
         </div>
       </section>
@@ -129,8 +138,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Team */}
       <section className="flex flex-col items-center mt-12 mb-16 sm:mb-20">
-        <div className="flex flex-col flex-wrap items-center lg:w-[1024px] mx-2 sm:mx-0">
+        <div className="flex flex-col flex-wrap items-center lg:max-w-[1024px] mx-2 sm:mx-0">
           <h2 className="text-2xl sm:text-4xl text-sun leading-10 tracking-normal font-semibold">
             Equipe
           </h2>
