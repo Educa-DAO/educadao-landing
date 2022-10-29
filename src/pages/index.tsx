@@ -15,7 +15,7 @@ export default function Home() {
           {/* Home Big Logo */}
           <Image
             className="m-4"
-            src="/images/logo-large-yellow-text.svg"
+            src="/images/logos/logo-wide-for-purple-bg.svg"
             alt="EducaDAO Logo"
             width={300}
             height={94}

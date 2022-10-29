@@ -15,7 +15,7 @@ export default function Header({ className, ...headerProps }: HeaderProps) {
       <div className="max-w-[1128px] w-full flex justify-between items-center">
         <Link href="/">
           <Image
-            src="/images/logo-small-white-text.svg"
+            src="/images/logos/logo-wide-for-purple-bg-white-text.svg"
             alt="EducaDAO logo"
             width={138}
             height={44}
