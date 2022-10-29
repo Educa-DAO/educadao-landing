@@ -21,7 +21,7 @@ export default function Header({ className, ...headerProps }: HeaderProps) {
           <Button
             link="https://educadao.gitbook.io/educa-dao/"
             theme="tertiary"
-            className="mr-4 hidden md:flex"
+            className="flex mr-4"
             title="Ir para a documentação"
           >
             <GitBook
@@ -29,9 +29,9 @@ export default function Header({ className, ...headerProps }: HeaderProps) {
               alt="discord logo"
               width={24}
               height={24}
-              className="mr-2"
+              className="md:mr-2"
             />
-            Documentação
+            <div className="hidden md:block">Documentação</div>
           </Button>
 
           <Button link="https://discord.gg/PaB2qJ5a6j" className="flex">
@@ -40,11 +40,11 @@ export default function Header({ className, ...headerProps }: HeaderProps) {
               alt="discord logo"
               width={24}
               height={24}
-              className="mr-2 hidden md:block"
+              className="md:mr-2"
               title="Ir para o Discord"
             />
 
-            <div>Entre na comunidade</div>
+            <div className="hidden md:block">Entre na comunidade</div>
           </Button>
         </div>
       </div>
