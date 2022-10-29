@@ -101,14 +101,14 @@ export default function Home() {
           <div className="flex flex-col items-center lg:w-[896px] xl:w-[1024px]">
             <div className="flex flex-col lg:flex-row gap-y-8 sm:gap-y-14 justify-between items-center mb-10 sm:mb-16 w-full">
               <Image
-                src="/images/partners/ethereumBR.png"
+                src="/images/partners/ethereum-br.png"
                 alt="Ethereum Brasil logo"
                 width={448}
                 height={201}
               />
 
               <Image
-                src="/images/partners/ethereumSP.png"
+                src="/images/partners/ethereum-sp.png"
                 alt="Ethereum Brasil logo"
                 width={448}
                 height={201}
@@ -128,8 +128,8 @@ export default function Home() {
               />
 
               <Image
-                src="/images/partners/filecoin.png"
-                alt="Filecoin logo"
+                src="/images/partners/file-coin.png"
+                alt="File Coin logo"
                 width={285}
                 height={201}
               />
