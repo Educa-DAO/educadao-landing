@@ -27,10 +27,9 @@ export default function Home() {
           <div className="relative w-[106.75vh] max-w-[95vw] min-h-[53.5vw] md:min-h-[60vh] sm:max-h-[20vw]">
             <iframe
               className="absolute top-0 left-0 w-full h-full overflow-hidden"
-              src="https://www.youtube.com/embed/Hn6-JoCGZRc?autoplay=1&mute=1"
+              src="https://www.youtube.com/embed/Hn6-JoCGZRc"
               frameBorder="0"
               allowFullScreen={true}
-              allow="autoplay"
             />
           </div>
 
