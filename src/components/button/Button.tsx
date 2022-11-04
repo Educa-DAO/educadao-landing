@@ -22,7 +22,7 @@ export default function Button({
   return (
     <Link href={link} target={target}>
       <button
-        className={`px-4 sm:px-6 py-2 font-semibold rounded-sm text-sm sm:text-base ${classNameForThemes[theme]} ${className}`}
+        className={`px-4 sm:px-6 py-2 font-semibold rounded-sm text-sm sm:text-base transition hover:brightness-90 ${classNameForThemes[theme]} ${className}`}
         {...props}
       >
         {children}

@@ -3,6 +3,7 @@ import Profile from '@components/profile/Profile';
 import { team } from '@_config/team';
 import Logo from '@components/logo/Logo';
 import SocialMediaLinks from '@components/social-media-links/SocialMediaLinks';
+import Button from '@components/button/Button';
 
 export default function Home() {
   return (
@@ -17,10 +18,17 @@ export default function Home() {
           />
 
           {/* Description */}
-          <div className="m-6">
-            <p className="font-bold text-lightGray text-center text-base sm:text-xl">
+          <div className="m-6 flex flex-col items-center">
+            <p className="font-bold text-lightGray text-center text-base sm:text-xl mb-3">
               Conheça o projeto que vai transformar a educação GRATUITA.
             </p>
+            <Button
+              link="https://forms.gle/jD5E8sx6nkbYSuDf7"
+              className="flex mr-4"
+              title="Ir para a o formulário"
+            >
+              <span className="px-8 py-[2px]">Quero contribuir</span>
+            </Button>
           </div>
 
           {/* Video Iframe */}
