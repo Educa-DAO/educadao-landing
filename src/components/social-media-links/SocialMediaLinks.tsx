@@ -16,7 +16,7 @@ export default function SocialMediaLinks({ className }: SocialMediaLinksProps) {
       >
         <GitHub
           alt="github logo"
-          className="w-8 h-8 sm:w-10 sm:h-10 transition hover:brightness-75"
+          className="relative w-8 h-8 sm:w-10 sm:h-10 transition hover:brightness-75 transition-transform hover:translate-y-[-2px]"
         />
       </Link>
 
@@ -27,7 +27,7 @@ export default function SocialMediaLinks({ className }: SocialMediaLinksProps) {
       >
         <Twitter
           alt="twitter logo"
-          className="w-8 h-8 sm:w-10 sm:h-10 transition hover:brightness-75"
+          className="w-8 h-8 sm:w-10 sm:h-10 transition hover:brightness-75 transition-transform hover:translate-y-[-2px]"
         />
       </Link>
 
@@ -38,7 +38,7 @@ export default function SocialMediaLinks({ className }: SocialMediaLinksProps) {
       >
         <Discord
           alt="discord logo"
-          className="w-8 h-8 sm:w-10 sm:h-10 transition hover:brightness-75"
+          className="w-8 h-8 sm:w-10 sm:h-10 transition hover:brightness-75 transition-transform hover:translate-y-[-2px]"
         />
       </Link>
     </div>
