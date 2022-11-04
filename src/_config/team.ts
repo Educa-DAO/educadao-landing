@@ -54,18 +54,20 @@ export const team: ProfileDomain[] = [
       linkedin: 'https://www.linkedin.com/in/tain%C3%A1-salvatore-110573113/',
     },
   },
-  // {
-  //   name: 'Bruno Bardella',
-  //   avatar: '/avatar-placeholder.jpg',
-  //   role: 'Head de Qualidade',
-  //   socialNetworks: {
-  //     linkedin: 'https://www.linkedin.com/in/bbardella/',
-  //   },
-  // },
-  // {
-  //   name: 'Rivan Bello',
-  //   avatar: '/avatar-placeholder.jpg',
-  //   role: '',
-  //   socialNetworks: {},
-  // }
+  {
+    name: 'Bruno Bardella',
+    avatar: '/bruno.png',
+    role: 'Head de Qualidade',
+    socialNetworks: {
+      linkedin: 'https://www.linkedin.com/in/bbardella/',
+    },
+  },
+  {
+    name: 'Rivan Bello',
+    avatar: '/rivan.jpeg',
+    role: 'IT Advisor',
+    socialNetworks: {
+      linkedin: 'https://www.linkedin.com/in/rivanbello/',
+    },
+  },
 ];
