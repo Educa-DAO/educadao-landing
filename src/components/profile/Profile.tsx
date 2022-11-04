@@ -38,7 +38,7 @@ export default function Profile({
               <SocialNetworkIcon
                 socialNetwork={socialNetworkName}
                 color="#FCBD10"
-                className="w-4 h-4 sm:w-[18px] sm:h-[18px]"
+                className="w-4 h-4 sm:w-[18px] sm:h-[18px] transition hover:brightness-75"
               />
             </Link>
           )

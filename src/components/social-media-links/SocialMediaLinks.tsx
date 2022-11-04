@@ -14,7 +14,10 @@ export default function SocialMediaLinks({ className }: SocialMediaLinksProps) {
         target="_blank"
         title="Ir para o GitHub"
       >
-        <GitHub alt="github logo" className="w-8 h-8 sm:w-10 sm:h-10" />
+        <GitHub
+          alt="github logo"
+          className="w-8 h-8 sm:w-10 sm:h-10 transition hover:brightness-75"
+        />
       </Link>
 
       <Link
@@ -22,7 +25,10 @@ export default function SocialMediaLinks({ className }: SocialMediaLinksProps) {
         target="_blank"
         title="Ir para o Twitter"
       >
-        <Twitter alt="twitter logo" className="w-8 h-8 sm:w-10 sm:h-10" />
+        <Twitter
+          alt="twitter logo"
+          className="w-8 h-8 sm:w-10 sm:h-10 transition hover:brightness-75"
+        />
       </Link>
 
       <Link
@@ -30,7 +36,10 @@ export default function SocialMediaLinks({ className }: SocialMediaLinksProps) {
         target="_blank"
         title="Ir para o Discord"
       >
-        <Discord alt="discord logo" className="w-8 h-8 sm:w-10 sm:h-10" />
+        <Discord
+          alt="discord logo"
+          className="w-8 h-8 sm:w-10 sm:h-10 transition hover:brightness-75"
+        />
       </Link>
     </div>
   );

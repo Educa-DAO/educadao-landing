@@ -21,7 +21,7 @@ export default function Header({ className, ...headerProps }: HeaderProps) {
           <Button
             link="https://docs.educa-dao.com/"
             theme="tertiary"
-            className="flex mr-4"
+            className="flex mr-4 transition hover:brightness-90"
             title="Ir para a documentação"
           >
             <GitBook
@@ -34,7 +34,10 @@ export default function Header({ className, ...headerProps }: HeaderProps) {
             <div className="hidden md:block">Documentação</div>
           </Button>
 
-          <Button link="https://discord.gg/PaB2qJ5a6j" className="flex">
+          <Button
+            link="https://discord.gg/PaB2qJ5a6j"
+            className="flex transition hover:brightness-90"
+          >
             <Discord
               color="#FFFFFF"
               alt="discord logo"
